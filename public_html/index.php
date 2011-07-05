@@ -250,26 +250,7 @@
 
     </div>
 
-    <nav class="yui-u">
-    <ul>
-    <li>
-    <h3>Extra Column</h3>
-    <p>Optionally nest standard grids</p>
 
-    </li>
-    </ul>
-    </nav>
-
-    </div>
-    </div>
-    </section>
-
-    <nav class="yui-b" id="toc">
-    <ul>
-    <li>
-    </li>
-    </ul>
-    </nav>
 
     <br style="clear:both;" />
     </div>

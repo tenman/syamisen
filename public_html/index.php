@@ -1,61 +1,4 @@
-<?php
-$col = "";
-$page = "";
-header("Content-type: text/html;charset=UTF-8");
-session_start();
-
-if(!isset($_SESSION['page'])){
-    $_SESSION['page'] = "doc2";
-    }
-if(!isset($_SESSION['col'])){
-
-    $_SESSION['col'] = "t5";
-    }
-if(!isset($_SESSION['ex'])){
-
-    $_SESSION['ex'] = "g";
-}
-if(isset($_GET) and !empty($_GET)){
-
-    if($_GET['page'] == 'doc' or
-        $_GET['page'] == 'doc2' or
-        $_GET['page'] == 'doc3' or
-        $_GET['page'] == 'doc4'){
-
-        $_SESSION['page'] = $_GET['page'];
-    }
-
-
-    if($_GET['col'] == 't1' or
-        $_GET['col'] == 't2' or
-        $_GET['col'] == 't3' or
-        $_GET['col'] == 't4' or
-        $_GET['col'] == 't5' or
-        $_GET['col'] == 't6'){
-
-        $_SESSION['col'] = $_GET['col'];
-    }
-
-    if(
-        $_GET['ex'] == 'g' or
-        $_GET['ex'] == 'gb' or
-        $_GET['ex'] == 'gc' or
-        $_GET['ex'] == 'gd' or
-        $_GET['ex'] == 'ge' or
-        $_GET['ex'] == 'gf' ){
-
-        $_SESSION['ex'] = $_GET['ex'];
-
-
-    }
-}else{
-/*  $_SESSION['page'] = "doc2";
-    $_SESSION['col'] = "t5";
-    $_SESSION['ex'] = "gc";*/
-
-}
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 
     <head>
     <meta charset=utf-8>
@@ -302,19 +245,7 @@ if(isset($_GET) and !empty($_GET)){
     <div class="yui-b" >
     <div class="yui-g">
     <div class="yui-u first">
-    <article>
-    <h2>Example</h2>
-    <p>One of the blocks. Lorem ipsum dolor
-    sit amet, consectetuer adipiscing elit,
-    sed diam nonummy nibh euismod tincidunt ut
-    laoreet dolore magna aliquam erat volutpat.</p>
-    <div class="vevent"> <a class="url" href="http://www.web2con.com/">http://www.web2con.com/</a> <span class="summary">Web 2.0 Conference</span>:
-    <time class="dtstart" datetime="2007-10-05">October 5</time>
-    -
-    <time class="dtend" datetime="2007-10-20">19</time>
-    ,
-    at the <span class="location">Argent Hotel, San Francisco, CA</span> </div>
-    </article>
+<article>test</article>
 
 
     </div>
@@ -324,27 +255,7 @@ if(isset($_GET) and !empty($_GET)){
     <li>
     <h3>Extra Column</h3>
     <p>Optionally nest standard grids</p>
-    <p>ネストブロック</p>
-    <ul>
-    <li><a href="index.php?ex=g">.yui-g</a>
-    <p class="description">Standard <em>half</em> grid and <a href="http://developer.yahoo.com/yui/examples/grids/grids-gg.html">nest again for quarters</a>.</p>
-    </li>
-    <li><a href="index.php?ex=gb">.yui-gb</a>
-    <p class="description">Special grid, 1/3 - 1/3 - 1/3</p>
-    </li>
-    <li><a href="index.php?ex=gc">.yui-gc</a>
-    <p class="description">Special grid, 2/3 - 1/3</p>
-    </li>
-    <li><a href="index.php?ex=gd">.yui-gd</a>
-    <p class="description">Special grid, 1/3 - 2/3</p>
-    </li>
-    <li><a href="index.php?ex=ge">.yui-ge</a>
-    <p class="description">Special grid, 3/4 - 1/4</p>
-    </li>
-    <li><a href="index.php?ex=gf">.yui-gf</a>
-    <p class="description">Special grid, 1/4 - 3/4</p>
-    </li>
-    </ul>
+
     </li>
     </ul>
     </nav>
@@ -356,51 +267,6 @@ if(isset($_GET) and !empty($_GET)){
     <nav class="yui-b" id="toc">
     <ul>
     <li>
-    <h3>Page Widths</h3>
-    <p>Choose the overall page width.</p>
-    <p>ページ幅、プリセット4種　拡張自在</p>
-    <ul>
-    <li><a href="index.php?page=doc">#doc</a>
-    <p class="description">750px centered (good for 800x600)</p>
-    </li>
-    <li><a href="index.php?page=doc2">#doc2</a>
-    <p class="description">950px centered (good for 1024x768)</p>
-    </li>
-    <li><a href="index.php?page=doc3">#doc3</a>
-    <p class="description">100% fluid (good for everybody)</p>
-    </li>
-    <li><a href="index.php?page=doc4">#doc4</a>
-    <p class="description">974px fluid (good for 1024x768)</p>
-    </li>
-    <li><a href="http://developer.yahoo.com/yui/examples/grids/grids-doc-custom.html">#doc-custom</a>
-    <p class="description">an example of a custom page width</p>
-    </li>
-    </ul>
-    </li>
-    <li>
-    <h3>Templates</h3>
-    <p>Optionally choose the secondary column's width and orientation with one of six <em>templates</em>.</p>
-    <p>カラムは、左右3種からどうぞ</p>
-    <ul>
-    <li><a href="index.php?col=t1">.yui-t1</a>
-    <p class="description">Two columns, narrow on left, 160px</p>
-    </li>
-    <li><a href="index.php?col=t2">.yui-t2</a>
-    <p class="description">Two columns, narrow on left, 180px</p>
-    </li>
-    <li><a href="index.php?col=t3">.yui-t3</a>
-    <p class="description">Two columns, narrow on left, 300px</p>
-    </li>
-    <li><a href="index.php?col=t4">.yui-t4</a>
-    <p class="description">Two columns, narrow on right, 180px</p>
-    </li>
-    <li><a href="index.php?col=t5">.yui-t5</a>
-    <p class="description">Two columns, narrow on right, 240px</p>
-    </li>
-    <li><a href="index.php?col=t6">.yui-t6</a>
-    <p class="description">Two columns, narrow on right, 300px</p>
-    </li>
-    </ul>
     </li>
     </ul>
     </nav>

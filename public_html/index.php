@@ -242,16 +242,13 @@
     <div id="doc" class="yui-t4">
 
     <section id="yui-main">
-    <div class="yui-b" >
     <div class="yui-g">
-    <div class="yui-u first">
+    <div class="yui-u">
 <article>test</article>
 
 
     </div>
-
-
-
+</section>
     <br style="clear:both;" />
     </div>
 

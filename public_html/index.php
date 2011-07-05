@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-
-    <head>
-    <meta charset=utf-8>
-    <title>html5 Cupmen</title>
-    <!--[if IE]>
+<head>
+<meta charset=utf-8>
+<title>html5 Cupmen</title>
+<!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="http://html5resetcss.googlecode.com/files/html5-reset-1.4.css" media="all">
-    <!--Include YUI Loader: -->
-    <script type="text/javascript" src="http://yui.yahooapis.com/2.8.0r4/build/yuiloader/yuiloader-min.js"></script>
-    <!--Use YUI Loader to bring in your other dependencies: -->
-    <script type="text/javascript">
+<link rel="stylesheet" href="http://html5resetcss.googlecode.com/files/html5-reset-1.4.css" media="all">
+<!--Include YUI Loader: -->
+<script type="text/javascript" src="http://yui.yahooapis.com/2.8.0r4/build/yuiloader/yuiloader-min.js"></script>
+<!--Use YUI Loader to bring in your other dependencies: -->
+<script type="text/javascript">
     // Instantiate and configure YUI Loader:
     (function() {
         var loader = new YAHOO.util.YUILoader({
@@ -26,14 +25,14 @@
     loader.insert();
     })();
     </script>
-    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
-    <script type="text/javascript">google.load("jquery", "1.4.4");</script>
-    <script type="text/javascript">
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">google.load("jquery", "1.4.4");</script>
+<script type="text/javascript">
       jQuery(function() {
       //  alert("これはhtml5の実験用のドキュメントです。");
       });
     </script>
-    <style type="text/css">
+<style type="text/css">
     i{content:"\"/*"}
 
     /* inline high pass filter
@@ -101,6 +100,9 @@
     section {
     display:block;
     }
+	section{
+	min-height:400px;
+	}
     html>body nav li a {
     width:auto;
     }
@@ -221,15 +223,12 @@
        color:#333;
     }
     </style>
-    </head>
-
-    <body>
-
+</head>
+<body>
 <header class="bar">
-    <h1>html5 Template</h1>
-    </header>
-
-    <!-- id is page width select doc,doc2,doc3,doc4,custom-doc
+  <h1>Under Construction</h1>
+</header>
+<!-- id is page width select doc,doc2,doc3,doc4,custom-doc
     e.g.
     #custom-doc {
        margin:auto;text-align:left; /* leave unchanged */
@@ -239,24 +238,34 @@
     }
     class is column width select yui-t1,yui-t2,yui-t3,yui-t4,yui-t5,yui-t6,
     -->
-    <div id="doc" class="yui-t4">
+<div id="doc" class="yui-t4">
+<section id="yui-main" style="border:1px solid #ccc;">
+<div class="yui-gc">
+  <div class="yui-u first">
+    <article>
+<figure>	
+<img src="http://upload.wikimedia.org/wikipedia/commons/a/a3/KitagawaUtamaro_FlowersOfEdo.jpg" alt="syamisen" />
+syamisen 　from wikipedia
+</figure>
+	
+	
+	</article>
+  </div>
+  <div class="yui-u" style="padding-top:200px;"><h1>Under Construction</h1>
+  
+<ul class="links">
+	<li><a href="http://d.hatena.ne.jp/tenman">My Blog</a></li>
+</ul>	
 
-    <section id="yui-main">
-    <div class="yui-g">
-    <div class="yui-u">
-<article>test</article>
-
-
-    </div>
-</section>
-    <br style="clear:both;" />
-    </div>
-
-    <footer class="bar">
-    <address>
-    http://d.hatena.ne.jp/tenman/
-    </address>
-    </footer>
-
+  
+  </div>
+  </section>
+  <br style="clear:both;" />
+</div>
+<footer class="bar">
+  <address>
+  http://d.hatena.ne.jp/tenman/
+  </address>
+</footer>
 </body>
 </html>

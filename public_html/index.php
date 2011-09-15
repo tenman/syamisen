@@ -100,9 +100,9 @@
     section {
     display:block;
     }
-	section{
-	min-height:400px;
-	}
+    section{
+    min-height:400px;
+    }
     html>body nav li a {
     width:auto;
     }
@@ -239,25 +239,18 @@
     class is column width select yui-t1,yui-t2,yui-t3,yui-t4,yui-t5,yui-t6,
     -->
 <div id="doc" class="yui-t4">
-<section id="yui-main" style="border:1px solid #ccc;">
+<section id="yui-main">
 <div class="yui-gc">
   <div class="yui-u first">
     <article>
-<figure>	
-<img src="http://upload.wikimedia.org/wikipedia/commons/a/a3/KitagawaUtamaro_FlowersOfEdo.jpg" alt="syamisen" />
-syamisen 　from wikipedia
-</figure>
-	
-	
-	</article>
+      <figure> <img src="http://upload.wikimedia.org/wikipedia/commons/a/a3/KitagawaUtamaro_FlowersOfEdo.jpg" alt="syamisen" /> Syamisen 　from wikipedia </figure>
+    </article>
   </div>
-  <div class="yui-u" style="padding-top:200px;"><h1>Under Construction</h1>
-  
-<ul class="links">
-	<li><a href="http://d.hatena.ne.jp/tenman">My Blog</a></li>
-</ul>	
-
-  
+  <div class="yui-u" style="padding-top:200px;">
+    <h1>Under Construction</h1>
+    <ul class="links">
+      <li><a href="http://d.hatena.ne.jp/tenman">My Blog</a></li>
+    </ul>
   </div>
   </section>
   <br style="clear:both;" />
